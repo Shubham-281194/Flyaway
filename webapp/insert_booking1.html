@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="ISO-8859-1">
+    <title>Admin Page</title>
+    <link
+     rel="stylesheet"
+     href="css/homepage.css"
+     />
+<style>
+body {
+  background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/shutterstock_186964970.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+</style>
+</head>
+<body>
+<form action="Insert_Booking" method="post">
+      <div class="topnav">
+		     <a href="homepage.html"><b>FlyAway</b></a>
+			 		
+	  </div>
+	
+		  <div class="topnav">
+		     <a href="admin.html"><b>Home</b></a>
+			 <a href="registration.html"><b>Register</b></a>
+			 <a href="login.html"><b>Login</b></a>
+			 <a href="admin.html"><b>CRUD</b></a>
+		
+	  </div><br>
+
+<table class="container">
+
+<input type="radio" name="admin" value="insert"> Insert</input>
+<input type="radio" name="admin" value="read"> Read</input>
+<input type="radio" name="admin" value="update"> Update</input>
+<input type="radio" name="admin" value="delete"> Delete</input>
+
+        <tr>
+		<td><h3 style= "color:white;">Choose Your Table</h3></td>
+	    <td>
+	    <input type="text" name=table" list="table" placeholder= "Choose Your Table" required>
+	    <datalist id="table">
+        <option value="booking1">
+        <option value="enquiry">
+        <option value="flight">
+        <option value="registration">
+        <option value="route">
+        </datalist>
+	    </td>
+	    </tr>
+
+	
+	
+	<tr>
+		
+		<td><h2>Journey Date:</h2></td>
+		<td><input type="date" name="t_date" placeholder="please select"></td>
+	</tr>
+
+	<tr>
+		
+		<td><h2>Passenger Number:</h2></td>
+		<td><input type="number" name="trav_no" placeholder="Enter passenger value"></td>
+	</tr>
+	
+	<tr>
+		
+		<td><h2>flight Number:</h2></td>
+		<td><input type="text" name="flight_no" placeholder="Enter passenger value"></td>
+	</tr>
+	
+	
+	
+	</table>
+	
+	<button type="submit">Submit</button>  &nbsp;&nbsp;  <button type="reset">Reset</button>
+	
+</form>	
+
+</body>
+</html>

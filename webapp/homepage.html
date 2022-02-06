@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="ISO-8859-1">
+    <title>Search Flight</title>
+    <link
+     rel="stylesheet"
+     href="css/homepage.css"
+     />
+<style>
+body {
+  background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/shutterstock_186964970.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+</style>
+</head>
+<body>
+
+    <form action="HomeServlet" method="post">
+    
+      <div class="topnav">
+		     <a href="homepage.html"><b>FlyAway</b></a>
+			 		
+	  </div>
+	  
+	  <div class="topnav">
+		     <a href="homepage.html"><b>Home</b></a>
+			 <a href="registration.html"><b>Register</b></a>
+			 <a href="login.html"><b>Login</b></a>
+			 <a href="contact.html"><b>Contact</b></a>
+		
+	  </div><br>
+	        
+	  <table class="container">
+	  
+		<tr>
+		<td><h3 style= "color:white;">Source</h3></td>
+	    <td>
+	    <input type="text" name="users_city" list="cityname" placeholder= "Enter city" required>
+	    <datalist id="cityname">
+        <option value="Delhi">
+        <option value="Mumbai">
+        <option value="Bengaluru">
+        </datalist>
+        </td>
+	    </tr>
+	    
+	    <tr>
+		<td><h3 style= "color:white;">Destination</h3></td>
+	    <td>
+	    <input type="text" name="userd_city" list="cityname" placeholder= "Enter city" required>
+	    <datalist id="cityname">
+        <option value="Delhi">
+        <option value="Mumbai">
+        <option value="Bengaluru">
+        </datalist>
+	    </td>
+	    </tr>
+	    
+	    <tr>
+		<td><h3 style= "color:white;">Date</h3></td>
+	    <td><input type="date" placeholder="Enter date" name="user_date" required></td>
+	    </tr>
+	    
+	    <tr>
+		<td><h3 style= "color:white;">Number of Travelers</h3></td>
+	    <td><input type="number" placeholder="Enter number" name="user_no" required></td>
+	    </tr>
+	
+	  </table>
+	  
+	  <button type="submit">Book</button> &nbsp;&nbsp;  <button type="reset">Reset</button> 
+	    
+    </form>
+</body>
+</html>
